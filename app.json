@@ -7,15 +7,8 @@
     "icon": "./assets/images/icon.png",
     "scheme": "rockpapersnap",
     "userInterfaceStyle": "automatic",
-    "ios": { 
-  "expo": { 
-    "name": "rps-game", 
-    "slug": "rps-game", 
-    "version": "1.0.0", 
-    "splash": { 
-      "image": "./assets/images/appIcon.jpg", 
-      "resizeMode": "contain", 
-      "backgroundColor": "#FFFFFF" 
+    "ios": {
+      "icon": "./assets/expo.icon"
     },
     "android": {
       "adaptiveIcon": {
@@ -27,7 +20,7 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "output": "server",
+      "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
@@ -35,9 +28,9 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "image": "./assets/images/appIcon.jpg",
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
         }
       ]
     ],
@@ -45,7 +38,5 @@
       "typedRoutes": true,
       "reactCompiler": true
     }
-  }
-}
   }
 }
